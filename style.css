@@ -1,0 +1,217 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+nav {
+    position: fixed;
+    width: 100vw;
+    height: 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFF;
+    box-shadow: 5px 4px 4px 1px #878787;
+    z-index: 10;
+}
+
+#logo {
+    margin-left: 10px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.gras {
+    font-weight: 900;
+}
+
+main {
+    width: 95%;
+    margin: auto;
+}
+
+#imgHeader {
+    background-image: url("img/architect.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    /*--- Alternative ---
+    background: url("img/architect.jpg") center no-repeat;
+    background-size: cover;
+    */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-weight: 400;
+    color: #FFF;
+}
+
+
+/*--- Section Projects ---*/
+
+
+/*--- Altenative ---
+h1 span {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 5px;
+}
+*/
+.fondDark {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 5px;
+}
+
+#imgCards, #archiCards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+figure {
+   position: relative;
+}
+
+figure figcaption {
+    position: absolute;
+    top: 0;
+}
+
+figure, #archiCards div {
+    width: 23%;
+    overflow: hidden;
+    margin: 16px 0;
+}
+
+figure img, #archiCards img, #archiCards button {
+    width: 100%;
+}
+
+figcaption, form button, footer{
+    background-color: rgb(0, 0, 0);
+    color: #FFF;
+    padding: .5rem;
+    font-size: .8rem;
+}
+
+#archiCards button {
+    border: none;
+    background-color: rgb(228, 226, 226);
+    font-weight: 600;
+    padding: 10px 0;
+    font-size: 16px;
+}
+
+h3 {
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
+h4 {
+    font-size: .9rem;
+    color: rgb(139, 139, 139);
+}
+
+/*--- Section Contact ---*/
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea {
+    padding: .3rem;
+    margin: .5rem 0;
+}
+
+form button {
+    margin: 1rem 0;
+    padding: .5rem;
+    border: none;
+    width: 150px;
+}
+
+textarea {
+    font-size: 14px;
+}
+
+#archiCards div {
+    position: relative;
+    height: 540px;
+}
+
+#archiCards div button {
+    position: absolute;
+    bottom: 0;
+}
+
+/*--- Footer ---*/
+
+.map {
+    background-image: url("img/map.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+}
+
+footer {
+    margin: 0 1rem;
+    height: 75px;
+    text-align: center;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+/*-- Aternative Footer---
+
+input, textarea {
+    display: block;
+    width: 100%;
+    margin: 0 0 10px ;
+    padding: 5px;
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500;
+}
+
+button[type="submit"] {
+    width: auto;
+    font-size: 14px;
+    background-color: #000;
+    color: #FFF;
+    padding: 5px;
+}
+
+footer figure {
+    width: auto;
+    margin: 15px;
+}
+
+footer figure figcaption {
+    text-align: center;
+    padding: 1rem;
+    margin-top: -.3rem;
+    height: 50px;
+}
+*/
+
